@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     },
     formControl : {
         margin   : theme.spacing(1),
-        minWidth : 150
+        minWidth : 200
     },
     selectEmpty : {
         marginTop : theme.spacing(2)
@@ -95,10 +95,17 @@ function FilterMaps(props) {
     const classes = useStyles();
     const [ mapTitle, setMapTitle ] = useState('');
     const [ mapUrl, setMapUrl ] = useState('');
+    const [ mapFilter, setMapFilter ] = useState('');
+    const [ filters, setFilters ] = useState([]);
 
     const handleChange = (evt) => {
         setMapTitle(evt.target.value);
-        const mapFound = maps.find((map) => map.title === evt.target.value);
+        setFilters(maps[evt.target.value]);
+    };
+
+    const handleFinalFilterChange = (evt) => {
+        setMapFilter(evt.target.value);
+        const mapFound = filters.find((element) => element.title === evt.target.value);
         setMapUrl(mapFound.url);
     };
 
@@ -124,7 +131,25 @@ function FilterMaps(props) {
                             value={mapTitle}
                             onChange={handleChange}
                             label="Select Filter">
-                            {maps.map((element) => (
+                            <MenuItem value="Hotspot Analysis">Hotspot Analysis</MenuItem>
+                            <MenuItem value="Mode Of Payment">Mode Of Payment</MenuItem>
+                            <MenuItem value="No Of Orders Per User">No Of Orders Per User</MenuItem>
+                            <MenuItem value="Order Value">Order Value</MenuItem>
+                            <MenuItem value="Type Of Membership">Type Of Membership</MenuItem>
+                            <MenuItem value="User Age">User Age</MenuItem>
+                            <MenuItem value="User Device">User Device</MenuItem>
+                            <MenuItem value="Others">Others</MenuItem>
+                        </Select>
+                    </FormControl>
+                    <FormControl variant="outlined" className={classes.formControl}>
+                        <InputLabel id="demo-simple-select-outlined-label1">{mapTitle}</InputLabel>
+                        <Select
+                            labelId="demo-simple-select-outlined-label1"
+                            id="demo-simple-select-outlined"
+                            value={mapFilter}
+                            onChange={handleFinalFilterChange}
+                            label="Select Filter">
+                            {filters.map((element) => (
                                 <MenuItem key={element.id} value={element.title}>
                                     {element.title}
                                 </MenuItem>

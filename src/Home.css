@@ -25,26 +25,26 @@
 }
 
 .slideshow li:nth-child(1) {
-    background-image: url(http://i.imgur.com/emvhOnb.jpg);
+    background-image: url(https://sulcdn.azureedge.net/content/images/listings/listseo/home-cleaning.jpg);
 }
 
 .slideshow li:nth-child(2) {
-    background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+    background-image: url(https://cdn.mrright.in/cdn/content/assets/2015-11/medium/e8b01d5d11a349389e97978152f76984-general%20plumbing%20work.jpg);
     animation-delay: 10s;
 }
 
 .slideshow li:nth-child(3) {
-    background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+    background-image: url(https://5.imimg.com/data5/SM/QZ/YP/ANDROID-14780842/product-jpeg-500x500.jpg);
     animation-delay: 20s;
 }
 
 .slideshow li:nth-child(4) {
-    background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+    background-image: url(https://lh3.googleusercontent.com/proxy/B2AzxhVxCsjJ1Mc1A-W_wNXi5WENy61JOjY6psclzsLw1k7OfGaKbkIu3R0srkBzKSAuI8VySRhFYtdN0NCuIGPE5S21pFeX4cTW8n0W5z8saMcLbg);
     animation-delay: 30s;
 }
 
 .slideshow li:nth-child(5) {
-    background-image: url(http://i.imgur.com/K3mPv14.jpg);
+    background-image: url(https://images.unsplash.com/photo-1521791136064-7986c2920216?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2VydmljZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
     animation-delay: 40s;
 }
 
