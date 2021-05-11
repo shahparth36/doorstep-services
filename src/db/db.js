@@ -1,4 +1,3 @@
-// https://www.linkedin.com/in/shubham-pravin-patil/
 const maps = {
     'Type Of Membership'    : [
         {
