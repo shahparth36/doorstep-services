@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Switch } from 'react-router';
 import './App.css';
+import FilterMaps from './FilterMaps';
+import Home from './Home';
+import CityInput from './CityInput';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Switch>
+            <Route
+                exact
+                path="/filters/:city"
+                render={(routeProps) => <FilterMaps cityName={routeProps.match.params.city} />}
+            />
+            <Route exact path="/city" render={() => <CityInput />} />
+            <Route exact path="/" render={() => <Home />} />
+        </Switch>
+    );
 }
 
 export default App;
