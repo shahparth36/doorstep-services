@@ -7,10 +7,9 @@ const maps = {
                 'https://qgiscloud.com/shahparth/IGT_PROJECT_QGIS/?bl=mapnik&l=IOS_users!%2Conline_payment!%2CCOD_payment!%2Cpremium_members%2Catleast_10_orders!%2Cmax_users_area%5B42%5D!%2Candroid_users!%2Cleast_order_regions%5B44%5D!%2Cmax_order_traffic%5B45%5D!%2CDataset!&t=IGT_PROJECT_QGIS&e=8067039%2C2133866%2C8202505%2C2198424'
         },
         {
-            title : 'All Android Users',
-            id    : 'all-android-users',
-            url   :
-                'https://qgiscloud.com/shahparth/IGT_PROJECT_QGIS/?bl=mapnik&l=IOS_users!%2Conline_payment!%2CCOD_payment!%2Cpremium_members!%2Catleast_10_orders!%2Cmax_users_area%5B42%5D!%2Candroid_users%2Cleast_order_regions%5B44%5D!%2Cmax_order_traffic%5B45%5D!%2CDataset!&t=IGT_PROJECT_QGIS&e=8067039%2C2133866%2C8202505%2C2198424'
+            title : 'Non Premium Members',
+            id    : 'non-premium-members',
+            url   : 'https://qgiscloud.com/shahparth/Non_premium_Members/'
         }
     ],
     'User Device'           : [
